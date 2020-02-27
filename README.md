@@ -1,10 +1,12 @@
-# Visual Studio Code for the Busy Scientist
+# Jupyter Notebook for the Busy Scientist
 
-A quick demonstration. Some fantastic scientific programmers
+A quick demonstration. Some curious scientific programmers
 wait a long-time before trying a modern IDE.
-Here are some reasons to take a look at Visual Studio Code.
+Here are some reasons to take a look at Jupyter.
 
 ## Preliminaries
+
+**First**, it's good to know there's two distinct and different products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is JupyterLab(https://jupyterlab.readthedocs.io/en/latest/). So let's get started with JupyterLab!
 
 1. Install Visual Studio Code (https://code.visualstudio.com/)
 2. Add the following four key extensions (Code Runner 0.9.16, Python, and R, markdownlint).
