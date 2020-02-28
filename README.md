@@ -6,13 +6,13 @@ Here are some reasons to take a look at Jupyter.
 
 ## Preliminaries
 
-**First**, it's good to know there's two distinct and different products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is JupyterLab(https://jupyterlab.readthedocs.io/en/latest/). So let's get started with JupyterLab!
+**First**, it's good to know there's two distinct and different products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). So let's get started with JupyterLab!
 
-1. Install Visual Studio Code (https://code.visualstudio.com/)
-2. Add the following four key extensions (Code Runner 0.9.16, Python, and R, markdownlint).
-    * Do this by clicking on the four box icon on the left sidebar.
-    * Search for the extensions by name and install
-3. Ensure you have a python >= 3.6 environment available.
+1. [Install JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html) 
+2. Be default JupyterLab installs python but to install all the other cools stuff you'll need to:
+   - Linter such as [flake8](https://github.com/mlshapiro/jupyterlab-flake8) 
+   - [R kernel](https://richpauloo.github.io/2018-05-16-Installing-the-R-kernel-in-Jupyter-Lab/) so you can run R in Jupyter Lab
+   
 
 ## Shortcuts for Mac
 
