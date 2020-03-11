@@ -4,7 +4,11 @@ A quick demonstration. Some curious scientific programmers wait a long-time befo
 
 ## Preliminaries
 
-**First**, it's good to know there's two distinct products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed and screenshoted the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). So let's get started with JupyterLab, oh and I'll just say at the top that I do not think JupyterLab can currently replace a more engineering focused IDE application like Atom, VSCode or PyCharm but it is heading in that direction with its extensions and it does presently make a very good light-weight, browser-based analytical tool for teaching, data wrangling, modeling, scripting, cloud computing and various other analytic needs outside of engineering.
+**First**, it's good to know there's two distinct products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed and screenshoted the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). 
+
+![](https://jupyterlab.readthedocs.io/en/stable/_images/interface_jupyterlab.png)
+
+So let's get started with JupyterLab, oh and I'll just say at the top that I do not think JupyterLab can currently replace a more engineering focused IDE application like Atom, VSCode or PyCharm but it is heading in that direction with its extensions and it does presently make a very good light-weight, browser-based analytical tool for teaching, data wrangling, modeling, scripting, cloud computing and various other analytic needs outside of engineering.
 
 1. First let's [install JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html). The latest version is 2.0.1 and that's important because some of the add-ons and extensions may not work with this or other versions.
 2. By default JupyterLab installs python but to install all the other cools stuff* you'll need:
