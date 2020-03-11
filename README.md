@@ -1,17 +1,20 @@
 # Jupyter Notebook for the Busy Scientist
 
-A quick demonstration. Some curious scientific programmers
-wait a long-time before trying a modern IDE.
-Here are some reasons to take a look at Jupyter.
+A quick demonstration. Some curious scientific programmers wait a long-time before trying a modern IDE. Here are some reasons to take a look at Jupyter, a linearly executed IDE, with come caveats.
 
 ## Preliminaries
 
-**First**, it's good to know there's two distinct and different products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). So let's get started with JupyterLab!
+**First**, it's good to know there's two distinct products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed and screenshoted the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). So let's get started with JupyterLab, oh and I'll just say at the top that I do not think JupyterLab can currently replace a more engineering focused IDE application like Atom, VSCode or PyCharm but it is heading in that direction with its extensions and it does presently make a very good light-weight, browser-based analytical tool for teaching, data wrangling, modeling, scripting, cloud computing and various other analytic needs outside of engineering.
 
-1. [Install JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html) 
-2. Be default JupyterLab installs python but to install all the other cools stuff you'll need to:
-   - Linter such as [flake8](https://github.com/mlshapiro/jupyterlab-flake8) 
-   - [R kernel](https://richpauloo.github.io/2018-05-16-Installing-the-R-kernel-in-Jupyter-Lab/) so you can run R in Jupyter Lab
+1. First let's [install JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html). The latest version is 2.0.1 and that's important because some of the add-ons and extensions may not work with this or other versions.
+2. By default JupyterLab installs python but to install all the other cools stuff* you'll need:
+   - A linter such as [flake8](https://github.com/mlshapiro/jupyterlab-flake8) 
+   - A [debugger](https://github.com/jupyterlab/debugger)
+   - [Github integration](https://github.com/jupyterlab/jupyterlab-git)
+   - The [variable inspector](https://github.com/lckr/jupyterlab-variableInspector)
+   - And for those that use R as well there's an [R kernel](https://richpauloo.github.io/2018-05-16-Installing-the-R-kernel-in-Jupyter-Lab/) so you can run R in JupyterLab. That's nice.
+
+   **Caveat here** - some of these extensions/add-on are not as frequently updated as the core JupyterLab product and may not be available with the latest version of JupyterLab so be mindful when installing them. 
    
 
 ## Shortcuts for Mac
@@ -22,141 +25,60 @@ Here are some reasons to take a look at Jupyter.
 * ⇧ is the Shift key.
 * ⇪ is the Caps Lock key.
 
-## 1. Keyboard Shortcuts Aren't just for Emacs
+## 1. Keyboard Shortcuts 
 
-### Select Panes with ⌘1,⌘2, ... #n
+### Jupyterlab 
 
-If n is greater than the number of open panes, this will create a new pane.
+The shortcuts I use most when operating in Jupyterlab are the following:
 
-### Select Tabs within Panes with ⌃1,⌃2, ... ⌃n
+* Shift + Return - will run the cell selected
+* Return - will allow you to enter into the cell to edit the code
+* Esc - while escape will take you out of the cell while keeping it selected. You can then use the arrow keys to navigate down to another cell or..
+* A - hitting `A` after hitting Esc so you are no longer in a cell will create a new cell above where you are now
+* B - `B`  will create a cell below the one you are in now and..
+* DD - hitting `D` twice will delete the cell selected
+* M - hitting `M` when a cell is selected will turn that cell from a code to a markdown cell
+* Y - `Y` will turn the markdown cell back into a coded one
+* R - `R` will turn the cell into a raw format
 
-Get to the 2nd tab in the leftmost pane [⌘1], then [⌃2].
-
-### Select Explorer Pane with ⌘0
-
-Once you are in the explorer you can use up and down keys to select files.
-
-### Reveal File Paths Instantly
-
-Click on the file panel Use the keyboard shortcut [⌥⌘C], and bam!, the full path is copied to your clipboard (e.g., `/Users/kmayerbl/active/demo_vsc/README.md`)
-
-### Reveal Paths with Clicks
-
-Instantly get to where your code lives on your machine. Save time by right-clicking on a folder or file, and select [Reveal in Finder] or [Open in Terminal]. Need the path just click [Copy Path].
-
-### Save one or Save all by Group
-
-Take a look at the icon on the browser panel. You can, with one-click, save all the files or all the files in a group.
+It also auto-saves checkpoints so I don't worry too much about saving but use ⌘+S for good measures every now and again. Jupyterlab also has a text editor which has keyboard maps to popular text editors like vim, emacs or Sublime Text which you can select and edit under Settings. And if you just need a cheat sheet [BOOM!](https://blog.ja-ke.tech/assets/jupyterlab-shortcuts/Shortcuts.png)
 
 ## 2. Preview your README.md
 
-VSC offers a live rendering of your markdown. To view it, right-click on your markdown file and select [Open Preview].
+Jupyterlab offers live rendering of your markdown. To set it up, locate the markdown file you want to edit in Jupyter's file browser; right-click on the markdown file and select Open With > Markdown Preview. This will open up the file as a rendered markdown. You can then double-click on the same file again in the explorer and it'll open in Jupyter's Text Editor at which point you can grab and move/split the tabs to your preference for live editing of markdown.
 
-## 3. Run Script or Only Part of Script With ⌃⌥N
+## 3. Run Script or Only Part of Script With ~~⌃⌥N~~
 
-You can run a segment of a script by selecting the part you care about and hitting [⌃⌥N]. The results show up in the OUTPUT table.
+~~You can run a segment of a script by selecting the part you care about and hitting [⌃⌥N]. The results show up in the OUTPUT table.~~ Take the segment of code you want to run and drop it into a new cell and Shift+Return. Seems manual but this ability to take parts of code and iterate and interact with them by dropping them into a new cell to run is what some find beatiful about Jupyter. It is like an inline console which speaking of if you want to create a new console just select File > New and you can create a new console, or a new notebook (in either a python, R, Julia or other kernel), a terminal instance, a new text file, or a markdown.
 
-## 4. Problems and Quick Their Quick Fixes
+## 4. Problems and Their Quick Fixes
 
-Linters help you find problems quickly. These are reported in the Problems tab of the  Here are two examples. 
-
-* No-trailing-spaces (see one line above)
-* No-bare URLs (see in the first block)
-
-Get to the problems quickly with this shortcut [⇧⌘ M].
-
-![Problems and Their Fixes](https://user-images.githubusercontent.com/46639063/75186808-8c5f6c80-56fd-11ea-91c3-1d09b401b734.png)
-
-Here you can see tests that are failing, and "lint" that's piling up in your code. One of the things, I like about VSCode is that
-you can auto-correct simple problems like those above without even having to search through the code.
+Linters help you find problems quickly and [this guy](https://github.com/mlshapiro/jupyterlab-flake8) built a good one based on the flake8 python library for linting. The only problem is that currently it doesn't work with JupyterLab 2.0 yet that doesn't mean it won't in the future ; )
 
 ## 5. Debugging
 
-When we run python hi.py we see an error. Suppose we want to see where that error emerges.
-
-```bash
-Traceback (most recent call last):
-  File "greetings/hi.py", line 51, in <module>
-    assert sentance_case_to_be_degbugged("Camel") == "Camel"
-AssertionError
-```
-
-* Breakpoints fn + F9, or using the mouse by clicking in the left margin in the editor.
-* Click the Bug with the play icon
-* We can start at the source of the error and move inwards
-
-The breakpoint is placed on line 51 at the source of the error:
-
-![error1](https://user-images.githubusercontent.com/46639063/75187868-d9444280-56ff-11ea-9893-e2a2fa064875.png)
-
-"Step Into" the error (that is, go to the function being called) by clicking on the downward blue arrow.
-Then, step line by line through the problematic function and check whether state of all variables meet your expectations.
-
-![error2 1](https://user-images.githubusercontent.com/46639063/75188401-edd50a80-5700-11ea-9836-9d400300510d.png)
-
-* More: <https://code.visualstudio.com/docs/python/debugging>
+So having a debugger in your IDE that you can insert breakpoints, step in, cycle thru your lines, and step out is nice. Once again we have a [great extension here](https://github.com/jupyterlab/debugger) that provides that in Jupyterlab. Unfortunately, after many attempts at getting the debugger switch to show up in the UI and then trying to get it to operate I had to give up on it but in version 1 it worked as a good debugger should so hopefully this will be operating smoothly in Jupyterlab 2.0 soon.
 
 ## 6. Work on a Specific Unit Test
 
-A great thing about VSCode is how it organizes your test. You can even run them one by one.
+No cool unit testing integration or UI here folks :( but there is an extension that allows [cell-by-cell testing](https://github.com/timkpaine/jupyterlab_celltests) if you want to roll that into your testing setup.
 
-![tests](https://user-images.githubusercontent.com/46639063/75184229-ea3d8580-56f8-11ea-83d3-1ee87fec849c.png)
+## 7. ~~Peak Function is~~ Some Serious Magic Beans
 
-Also here is an easter egg if you like doctests:
+Ok ,so the "magic beans" here with Jupyterlab is that you have a very light and functional, once all the extensions are updated to play nicely with Jupyterlab 2.0, web-based IDE which outside of hard core engineering can be of use to you especially with the rise of cloud-computing and oh it has a dark theme now Settings > JupyterLab Theme.
 
-```bash
-pytest --doctest-modules -v
-```
+## 8. Git extension for JupyterLab
 
-## 7. Peak Function is Some Serious Magic Beans
+"There's an extension for that"[...seriously!](https://github.com/jupyterlab/jupyterlab-git) Yet, it's not as nice as the github integration for VSCode or PyCharm but then again JupyterLab is new and the extensions I believe are community-driven so they haven't had the time or resources to flush it out like the others may have. There's also one specifically for [diffing and merging of notebooks](https://github.com/jupyter/nbdime).
 
- Sometimes you don't want to search for where a variable or function is defined. VSCode has a peak function that let's examine externally referenced objects, and even edit them, directly from where an object is referenced. Let's look at what the French hello should be:
+## 9. Settings
 
-![peak](https://user-images.githubusercontent.com/46639063/75184186-d98d0f80-56f8-11ea-8e67-cd76626992f0.png)
+You can set system and all your user-specific settings by going to Settings > Advance Setting Editor.
 
-## 8. Look at a Merge Conflict
+### 10. the .ipynb file
 
-Let's look at resolving a merge conflict. A merge conflict often arises when two users commit changes to the same file. For instance, on GitHub, I wrote:
-
-```bash
-I think we should think global!
-```
-
-But on my laptop, I wrote:
-
-```bash
-I think we should start local!
-```
-
-When I tried to, push the second commit, my push was rejected:
-
-![Fail to Push](https://user-images.githubusercontent.com/46639063/75186423-b5333200-56fc-11ea-93e8-1aae785bc57c.png)
-
-So I pulled the version on GitHub that was one commit ahead, revealing a conflict without an auto-resolution. Git cannot merge two versions of the same file, if they have different content on the same line! How would git know which was correct?
-
-![Merge Conlict](https://user-images.githubusercontent.com/46639063/75185762-810b4180-56fb-11ea-810d-2560939496be.png)
-
-Fortunately, VSCode makes it easy to review the confict and pick the winner (or keep both, by appending a version as new lines of code).
-
-![Resolve Merge Conflict](https://user-images.githubusercontent.com/46639063/75185767-82d50500-56fb-11ea-8da1-4d32fddabe7c.png)
-
-After resolving the conflict, remember to commit and push the resolution.
-
-## 9. settings.json
-
-JSON file with all your user-specific settings. How to get to it? (see the common settings wheel at the lower left)
-
-![where is settngs dot json](https://user-images.githubusercontent.com/46639063/75194760-9ab58480-570d-11ea-95ed-d44fd5805197.png)
-≈
-
-### the .code-workspace file
-
-These apply to your specific workspace (project specific)?
-
-## 10. Switch effortlessly between environments
-
+This IS the ipython notebook file or your JupyterLab file with code and markdown in it and note you can only access these from the directory you execute `jupyterlab` in so either `pwd` to make sure or have a set location of where you save the files because you'll only be able to open .ipynb files in either the start-up directory or it's sub-folders. 
 
 ## Conclusions
 
-I am sure there are a ton of other great stuff one can do with Visual Studio Code.
-Hopefully, this tutorial has heightened your interest.
+Jupyterlab built upon the success of Jupyter notebook as a light-weight, browser based linearly executed IDE, but now has an updated front-end making it seem more similar to RStudio and Spyder. It comes with a much quicker backend running in your browser than Jupyter notebook and with the help of some extensions which you can theoretically load by enabling the Extension Manager in Settings you can add linting, debugging, version control and many more [(fasta render anyone?)](https://github.com/jupyterlab/jupyter-renderers). The downside though is that version 2 was a major release for them and they are now at 2.0.1 which was released in March 6, 2020 so the project is very new which means the extensions which add a lot of features to flush out the product also need to stay update-to-date with the current code base but that can create problems. There's guides for that, ["JupyterLab 1.x to 2.x Extension Migration Guide"](https://jupyterlab.readthedocs.io/en/stable/developer/extension_migration.html), but it'll be great when everything is playing nice and you have a powerful browser-based, light-weight IDE at your finger tips. Let's hope the synergy of the versioning of the core product and the community of extensions improves. Until then there's nothing stopping a python or R user from doing all their engineering in Atom, PyCharm, RStudio, or VSCode and then the rest of their coding/management in Jupyterlab since it is browser-based. Hopefully, this tutorial has heightened your interest.
