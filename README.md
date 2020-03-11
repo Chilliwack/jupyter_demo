@@ -4,7 +4,7 @@ A quick demonstration. Some curious scientific programmers wait a long-time befo
 
 ## Preliminaries
 
-**First**, it's good to know there's two distinct products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed and screenshoted the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). 
+First, it's good to know there's two distinct products associated with Jupyter. The earliest and first product developed by the Jupyter team is called [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html). This is the one you will see discussed and screenshoted the most when surfing the web. The second and latest product developed by the Jupyter team and the one we'll discuss in further detail below is [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/). 
 
 ![](https://jupyterlab.readthedocs.io/en/stable/_images/interface_jupyterlab.png)
 
