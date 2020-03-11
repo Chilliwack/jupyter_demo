@@ -19,7 +19,7 @@ So let's get started with JupyterLab, oh and I'll just say at the top that I do 
    - And for those that use R as well there's an [R kernel](https://richpauloo.github.io/2018-05-16-Installing-the-R-kernel-in-Jupyter-Lab/) so you can run R in JupyterLab. That's nice.
 
 
-   *Caveat here - some of these extensions/add-on are not as frequently updated as the core JupyterLab product and may not be available with the latest version of JupyterLab so be mindful when installing them. 
+   *__Caveat here__ - some of these extensions/add-on are not as frequently updated as the core JupyterLab product and may not be available with the latest version of JupyterLab so be mindful when installing them. 
 
 ## Shortcuts for Mac
 
