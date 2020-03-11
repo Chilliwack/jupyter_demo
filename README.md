@@ -14,8 +14,8 @@ A quick demonstration. Some curious scientific programmers wait a long-time befo
    - The [variable inspector](https://github.com/lckr/jupyterlab-variableInspector)
    - And for those that use R as well there's an [R kernel](https://richpauloo.github.io/2018-05-16-Installing-the-R-kernel-in-Jupyter-Lab/) so you can run R in JupyterLab. That's nice.
 
-   **Caveat here** - some of these extensions/add-on are not as frequently updated as the core JupyterLab product and may not be available with the latest version of JupyterLab so be mindful when installing them. 
-   
+
+   *Caveat here - some of these extensions/add-on are not as frequently updated as the core JupyterLab product and may not be available with the latest version of JupyterLab so be mindful when installing them. 
 
 ## Shortcuts for Mac
 
@@ -43,6 +43,8 @@ The shortcuts I use most when operating in Jupyterlab are the following:
 
 It also auto-saves checkpoints so I don't worry too much about saving but use ⌘+S for good measures every now and again. Jupyterlab also has a text editor which has keyboard maps to popular text editors like vim, emacs or Sublime Text which you can select and edit under Settings. And if you just need a cheat sheet [BOOM!](https://blog.ja-ke.tech/assets/jupyterlab-shortcuts/Shortcuts.png)
 
+![](https://miro.medium.com/max/2640/1*O20XGvUOTLoFKQ9o20usIA.png)
+
 ## 2. Preview your README.md
 
 Jupyterlab offers live rendering of your markdown. To set it up, locate the markdown file you want to edit in Jupyter's file browser; right-click on the markdown file and select Open With > Markdown Preview. This will open up the file as a rendered markdown. You can then double-click on the same file again in the explorer and it'll open in Jupyter's Text Editor at which point you can grab and move/split the tabs to your preference for live editing of markdown.
@@ -55,9 +57,14 @@ Jupyterlab offers live rendering of your markdown. To set it up, locate the mark
 
 Linters help you find problems quickly and [this guy](https://github.com/mlshapiro/jupyterlab-flake8) built a good one based on the flake8 python library for linting. The only problem is that currently it doesn't work with JupyterLab 2.0 yet that doesn't mean it won't in the future ; )
 
+![](https://raw.githubusercontent.com/mlshapiro/jupyterlab-flake8/master/img/example.png)
+![](https://github.com/mlshapiro/jupyterlab-flake8/raw/master/img/editor-example.png)
+
 ## 5. Debugging
 
 So having a debugger in your IDE that you can insert breakpoints, step in, cycle thru your lines, and step out is nice. Once again we have a [great extension here](https://github.com/jupyterlab/debugger) that provides that in Jupyterlab. Unfortunately, after many attempts at getting the debugger switch to show up in the UI and then trying to get it to operate I had to give up on it but in version 1 it worked as a good debugger should so hopefully this will be operating smoothly in Jupyterlab 2.0 soon.
+
+![](https://github.com/jupyterlab/debugger/blob/master/screencast.gif)
 
 ## 6. Work on a Specific Unit Test
 
@@ -65,11 +72,15 @@ No cool unit testing integration or UI here folks :( but there is an extension t
 
 ## 7. ~~Peak Function is~~ Some Serious Magic Beans
 
-Ok ,so the "magic beans" here with Jupyterlab is that you have a very light and functional, once all the extensions are updated to play nicely with Jupyterlab 2.0, web-based IDE which outside of hard core engineering can be of use to you especially with the rise of cloud-computing and oh it has a dark theme now Settings > JupyterLab Theme.
+Ok, so the "magic beans" here with Jupyterlab is that you have a very light and functional, once all the extensions are updated to play nicely with Jupyterlab 2.0, web-based IDE which outside of hard core engineering can be of use to you especially with the rise of cloud-computing and oh it has a dark theme now Settings > JupyterLab Theme.
+
+![](https://github.com/telamonian/theme-darcula/blob/master/darcula_preview.png)
 
 ## 8. Git extension for JupyterLab
 
 "There's an extension for that"[...seriously!](https://github.com/jupyterlab/jupyterlab-git) Yet, it's not as nice as the github integration for VSCode or PyCharm but then again JupyterLab is new and the extensions I believe are community-driven so they haven't had the time or resources to flush it out like the others may have. There's also one specifically for [diffing and merging of notebooks](https://github.com/jupyter/nbdime).
+
+![](https://github.com/jupyterlab/jupyterlab-github/blob/master/gitception.png)
 
 ## 9. Settings
 
@@ -81,7 +92,9 @@ This IS the ipython notebook file or your JupyterLab file with code and markdown
 
 ## Conclusions
 
-Jupyterlab built upon the success of Jupyter notebook as a light-weight, browser based linearly executed IDE, but now has an updated front-end making it seem more similar to RStudio and Spyder. It comes with a much quicker backend running in your browser than Jupyter notebook and with the help of some extensions which you can theoretically load by enabling the Extension Manager in Settings you can add linting, debugging, version control and many more [(fasta render anyone?)](https://github.com/jupyterlab/jupyter-renderers). 
+Jupyterlab built upon the success of Jupyter notebook as a light-weight, browser based linearly executed IDE, but now has an updated front-end making it seem more similar to RStudio and Spyder. It comes with a much quicker backend running in your browser than Jupyter notebook and with the help of some extensions which you can theoretically load by enabling the Extension Manager in Settings you can add linting, debugging, version control and many more [(fasta render anyone?)](https://github.com/jupyterlab/jupyter-renderers).
+
+![](https://camo.githubusercontent.com/6aa00b126595f41bc5bee84a6696234b63036fda/687474703a2f2f672e7265636f726469742e636f2f74656d697a6a616539582e676966)
 
 The downside though is that version 2 was a major release for them and they are now at 2.0.1 which was released in March 6, 2020 so the project is very new which means the extensions which add a lot of features to flush out the product also need to stay update-to-date with the current code base but that can create problems. There's guides for that, ["JupyterLab 1.x to 2.x Extension Migration Guide"](https://jupyterlab.readthedocs.io/en/stable/developer/extension_migration.html), but it'll be great when everything is playing nice and you have a powerful browser-based, light-weight IDE at your finger tips.
 
